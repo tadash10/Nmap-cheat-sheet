@@ -26,5 +26,13 @@ Este script escanea servicios SMB (Server Message Block) para detectar vulnerabi
 
 Para ejecutar cualquiera de estos scripts, utiliza el siguiente comando de Nmap, especificando el script que deseas ejecutar:
 
-```bash
+``bash
 nmap --script=<nombre_del_script> <IP>
+
+# Scripts NSE Personalizados
+
+| Script          | Descripción                                        | Uso recomendado                        |
+|-----------------|----------------------------------------------------|----------------------------------------|
+| http-vuln.nse   | Detecta posibles vulnerabilidades HTTP (XSS)       | Sitios web HTTP/HTTPS                  |
+| smb-vuln.nse    | Verifica si está habilitado el protocolo SMBv1     | Equipos Windows o servicios Samba (445)|
+
