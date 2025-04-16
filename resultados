@@ -31,6 +31,35 @@ description = [[
 -- @usage
 -- nmap --script=http-vuln.nse <target>
 --
+
+
+description = [[
+  Script personalizado para verificar si un servidor SMB expone SMBv1.
+]]
+
+---
+-- @usage
+-- nmap --script=smb-vuln.nse <target>
+--
+-- @output
+-- PORT     STATE SERVICE
+-- 445/tcp  open  microsoft-ds
+-- | smb-vuln:
+-- |   Este host permite SMBv1, considera deshabilitarlo.
+--
+
+author = "custom-script"
+license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
+categories = {"safe", "discovery"}
+
+portrule = function(host, port)
+  return port.number == 445 and port.protocol == "tcp"
+end
+
+action = function(host, port)
+  return "Este host permite SMBv1, considera deshabilitarlo."
+end
+
 -- @output
 -- PORT   STATE SERVICE
 -- 80/tcp open  http
