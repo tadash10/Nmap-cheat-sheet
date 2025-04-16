@@ -23,4 +23,3 @@ Este repositorio contiene varias carpetas que sirven de referencia para realizar
 ## Contribuciones
 
 - Si deseas contribuir a este repositorio, por favor revisa las instrucciones en el archivo CONTRIBUTING.md.
-
