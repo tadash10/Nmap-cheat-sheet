@@ -26,3 +26,9 @@ end
 action = function(host, port)
   return "Este host permite SMBv1, considera deshabilitarlo."
 end
+# Scripts NSE Personalizados
+
+| Script          | Descripción                                        | Uso recomendado                        |
+|-----------------|----------------------------------------------------|----------------------------------------|
+| http-vuln.nse   | Detecta posibles vulnerabilidades HTTP (XSS)       | Sitios web HTTP/HTTPS                  |
+| smb-vuln.nse    | Verifica si está habilitado el protocolo SMBv1     | Equipos Windows o servicios Samba (445)|
