@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun>
+<nmaprun scanner="nmap" args="nmap -oX - 192.168.1.1" start="..." version="7.94">
+<host>
+  <status state="up"/>
+  <address addr="192.168.1.1" addrtype="ipv4"/>
+  <ports>
+    <port protocol="tcp" portid="22">
+      <state state="open"/>
+      <service name="ssh"/>
+    </port>
+    <port protocol="tcp" portid="80">
+      <state state="open"/>
+      <service name="http"/>
+    </port>
+  </ports>
+</host>
+</nmaprun>
+
+salida-grepable.txt
+# Nmap 7.94 scan initiated at 2025-04-16 16:52 UTC
+Host: 192.168.1.1 ()  Status: Up
+Host: 192.168.1.1 ()  Ports: 22/open/tcp//ssh///, 80/open/tcp//http///
+# Nmap done at 2025-04-16 16:52 UTC -- 1 IP address (1 host up) scanned in 0.34 seconds
