@@ -1,0 +1,28 @@
+http-vuln.nse
+description = [[
+  Detects known HTTP vulnerabilities on web servers.
+]]
+author = "custom-script"
+license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
+categories = {"vuln", "discovery"}
+
+portrule = shortport.http
+
+action = function(host, port)
+  return "Ejemplo: este servidor parece vulnerable a XSS"
+end
+
+smb-vuln.nse
+description = [[
+  Custom script for checking SMBv1 exposure.
+]]
+author = "custom-script"
+categories = {"safe", "discovery"}
+
+portrule = function(host, port)
+  return port.number == 445 and port.protocol == "tcp"
+end
+
+action = function(host, port)
+  return "Este host permite SMBv1, considera deshabilitarlo."
+end
