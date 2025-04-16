@@ -23,3 +23,26 @@ Este repositorio contiene varias carpetas que sirven de referencia para realizar
 ## Contribuciones
 
 - Si deseas contribuir a este repositorio, por favor revisa las instrucciones en el archivo CONTRIBUTING.md.
+Técnicas de evasión
+escaneo-con-ip-falsa.txt
+
+escaneo-fragmentado.txt
+
+deteccion-firewall.txt
+
+TECNICAS DE EVASION
+escaneo-con-ip-falsa.txt
+
+escaneo-fragmentado.txt
+
+deteccion-firewall.txt
+USO DE SCRIPTS NSE
+nse-vuln-deteccion.txt
+
+escaneo-version-scripts.txt
+
+escaneo-con-snmp.txt
+Detección específica
+deteccion-os.txt
+
+escaneo-con-top-ports.txt
