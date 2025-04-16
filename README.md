@@ -1,31 +1,26 @@
-# Nmap Cheat Sheet - Guía Profesional
+# Nmap Cheat Sheet
 
-Guía de referencia rápida y profesional sobre el uso de Nmap para tareas de escaneo, enumeración, evasión y generación de reportes. Diseñada para pentesters, analistas de seguridad y administradores de red.
-
----
+Una guía profesional y completa sobre Nmap para auditores de seguridad, pentesters y administradores de redes. 
 
 ## Estructura del Repositorio
-Nmap-Cheat-Sheet/
-├── README.md           # Guía principal
-├── ejemplos/           # Salidas reales de escaneos
-├── scripts/            # Scripts NSE destacados o personalizados
-├── resultados/         # Reportes generados en distintos formatos
-└── recursos.md         # Enlaces útiles y documentación externa
 
+Este repositorio contiene varias carpetas que sirven de referencia para realizar escaneos, guardar resultados y usar scripts personalizados.
 
----
+### Contenido:
+- `README.md`: Guía principal con todos los comandos y ejemplos.
+- `ejemplos/`: Casos prácticos con salidas reales de escaneos de Nmap.
+- `scripts/`: Scripts personalizados para facilitar auditorías de seguridad.
+- `resultados/`: Reportes generados por Nmap en diferentes formatos.
+- `recursos.md`: Enlaces a documentación oficial, herramientas y recursos adicionales.
 
-## Introducción a Nmap
+## Comandos Principales
 
-Nmap (Network Mapper) es una herramienta de código abierto para exploración de redes y auditorías de seguridad. Permite descubrir hosts activos, servicios, versiones, sistemas operativos y posibles vulnerabilidades.
+- **Escaneo simple**: `nmap 192.168.1.1`
+- **Escaneo detallado**: `nmap -v 192.168.1.1`
+- **Escaneo por nombre de dominio**: `nmap scanme.nmap.org`
+- Y mucho más...
 
-Instalación:
+## Contribuciones
 
-`bash
-sudo apt install nmap       # En distribuciones Debian/Ubuntu
-brew install nmap           # En macOS con Homebrew
+- Si deseas contribuir a este repositorio, por favor revisa las instrucciones en el archivo CONTRIBUTING.md.
 
-COMANDOS BASICOS
-nmap 192.168.1.1            # Escaneo simple por IP
-nmap -v 192.168.1.1         # Escaneo detallado (verbose)
-nmap scanme.nmap.org        # Escaneo por nombre de dominio
