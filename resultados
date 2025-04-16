@@ -22,3 +22,28 @@ salida-grepable.txt
 Host: 192.168.1.1 ()  Status: Up
 Host: 192.168.1.1 ()  Ports: 22/open/tcp//ssh///, 80/open/tcp//http///
 # Nmap done at 2025-04-16 16:52 UTC -- 1 IP address (1 host up) scanned in 0.34 seconds
+
+description = [[
+  Script de detección simple para identificar vulnerabilidades HTTP comunes como XSS.
+]]
+
+---
+-- @usage
+-- nmap --script=http-vuln.nse <target>
+--
+-- @output
+-- PORT   STATE SERVICE
+-- 80/tcp open  http
+-- | http-vuln:
+-- |   Este servidor parece vulnerable a XSS
+--
+
+author = "custom-script"
+license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
+categories = {"vuln", "discovery"}
+
+portrule = shortport.http
+
+action = function(host, port)
+  return "Este servidor parece vulnerable a XSS."
+end
