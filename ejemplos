@@ -1,0 +1,50 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-04-16 16:32 UTC
+Nmap scan report for 192.168.1.1
+Host is up (0.00031s latency).
+Not shown: 998 closed tcp ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
+
+escaneo-con-scripts.txt
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-04-16 16:38 UTC
+Nmap scan report for 192.168.1.10
+Host is up (0.00023s latency).
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Apache httpd 2.4.29
+| http-enum:
+|   /admin/: Possible admin folder
+|   /login/: Login page found
+|_  /test/: Test page available
+Service Info: OS: Unix
+Nmap done: 1 IP address (1 host up) scanned in 12.52 seconds
+
+escaneos-puertos-completos.txt
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-04-16 16:45 UTC
+Nmap scan report for 192.168.1.20
+Host is up (0.00043s latency).
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+443/tcp   open  https
+3306/tcp  open  mysql
+5432/tcp  open  postgresql
+
+Nmap done: 1 IP address (1 host up) scanned in 67.92 seconds
+
+escaneos-simples.txt
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-04-16 16:32 UTC
+Nmap scan report for 192.168.1.1
+Host is up (0.00031s latency).
+Not shown: 998 closed tcp ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
+
+
+
